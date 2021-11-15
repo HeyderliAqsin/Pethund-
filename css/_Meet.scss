@@ -1,0 +1,178 @@
+//----------Meet start---------------
+#Meet{
+    padding: 80px 0;
+    .top-head{
+        padding: 40px 0;
+        text-align: center;
+        span{
+            color: $myColor2;
+            font-weight: 500;
+            position: relative;
+            img{
+                width: 55px;
+                height: 55px;
+                position: absolute;
+                z-index: -1;
+                left: 10%;
+                top: -100%;
+                transform: translate(10%,-100%);
+                animation: myAni 9s linear 0s infinite;  
+            }
+        }
+        h1{
+            color: $myColor;
+            font-weight: 900;
+            font-size: 3rem;
+            span{
+                font-weight: 900;
+            }
+        }
+    }
+    .category-item{
+    box-shadow: 0 0 20px 0 #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    &:hover{
+        .text{
+            .arrow{
+                width: 20px;
+            }
+        }
+        .img{
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #27304ba9;
+            }
+            img{
+                transform: scale(1.1);
+               
+            }
+            .icon{
+                i{
+                visibility: visible;
+                opacity: 1;
+                color:#fff;
+                font-size: 1.4rem;
+                }
+            }
+         
+        }
+    }
+    .img{
+        position: relative;
+        overflow: hidden;  
+        border-radius: 5px; 
+        img{
+        transition: .9s ease-in-out;
+        }
+         .icon{
+             position: absolute;
+             top:50%;
+             left: 50%;
+             transform: translate(-50%,-50%);
+             z-index: 2;
+            
+
+             i{
+                 margin-right: 15px;
+                 visibility: hidden;
+                 opacity: 0;  color:#fff;
+             }
+         }
+        }
+      .text{
+          text-align: center;
+          h4{
+              color: $myColor1;
+              font-weight: 700;
+              padding-top: 30px;
+          }
+          p{
+              color: #888;
+          }
+          hr{
+              width: 15%;
+              margin: 10px auto;
+              
+          }
+         a{
+             text-decoration: none;
+             color: $myColor2;
+             font-weight: 500;
+         }
+         .arrow{
+             margin-left: 10px;
+            display: inline-block;
+            width: 55px;
+            height: 2px;
+            background-color: #f15e42;
+            position: relative;
+            vertical-align: middle;
+            transition: .3s ease-in-out;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 2px;
+                background-color: #f15e42;
+                top: 3px;
+                right: -3px;
+                transform: rotate(
+                -45deg);
+                transform: rotate(
+                -45deg);
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 2px;
+                background-color: #f15e42;
+                top: -3px;
+                right: -3px;
+                transform: rotate(
+                45deg);
+                transform: rotate(
+                45deg);
+            }
+            }
+        }
+       
+    }
+    .bottom{
+        padding: 70px 0;
+        text-align: center;
+        &:hover{
+            a{
+                background:$myColor;
+                color:#fff;
+                 box-shadow: 0 5px 7px 0 #98cb466b;
+            }
+        }
+        h6{
+            color: $myColor2;
+            font-size: 1.2rem;
+        }
+        p{
+            color: #888;
+            padding-bottom: 30px;
+        }
+        a{
+            
+            text-decoration: none;
+            padding: 12px 35px;
+            color: $myColor;
+            border: 2px solid $myColor;
+            border-radius: 40px;
+            font-weight: 600;
+            transition: .3s ease-in-out;
+        }
+    }
+}
+//----------Meet end-----------------

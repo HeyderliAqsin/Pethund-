@@ -1,0 +1,189 @@
+//----------Three start--------------
+#Three{
+    background-color: $myColor2;
+    margin: 100px 0;
+    padding-bottom: 100px;
+    #firstly{
+        position: relative;
+        top: -30%;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            background-image: linear-gradient(
+             180deg, rgba(0, 0, 0, 0) 0%, #98CB46 100%);
+            opacity: 0.8;
+            border-bottom-left-radius: 10px;
+            
+        }
+        
+        img{
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+           }
+           .text{
+            position: absolute;
+            bottom: 5%;
+            left: 30%;
+             color: #fff;
+            text-align: center;
+            z-index: 2;
+           h3{
+               font-size: 2rem;
+               font-weight: 900;
+               border-bottom-color: #000;
+               text-shadow:2px 3px rgba(0, 0, 0, 0.26);
+            }
+            p{
+             text-shadow:2px 2px rgba(0, 0, 0, 0.26);
+            }
+           i{
+               transition: 0.3s ease-in-out;
+               &:hover{
+                   transform: scale(1.2);
+               }
+           }
+        }
+       
+        }
+     #secondly{
+            position: relative;
+            top: -30%;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                background-image: linear-gradient(
+                 180deg, rgba(0, 0, 0, 0) 0%, #b85346 100%);
+                opacity: 0.8;
+            }
+            
+            img{
+                height: 400px;
+                width: 400px;
+                object-fit: cover;
+               }
+               .text{
+                position: absolute;
+                bottom: 5%;
+                left: 30%;
+                 color: #fff;
+                text-align: center;
+                z-index: 2;
+               h3{
+                   font-size: 2rem;
+                   font-weight: 900;
+                   border-bottom-color: #000;
+                   text-shadow:2px 3px rgba(0, 0, 0, 0.26);
+                   }
+                   p{
+                    text-shadow:2px 2px rgba(0, 0, 0, 0.26);
+                   }
+               i{
+                   transition: 0.3s ease-in-out;
+                   &:hover{
+                       transform: scale(1.2);
+                   }
+               }
+            }
+           
+            }
+     #thirdly{
+                position: relative;
+                top: -30%;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparent;
+                    background-image: linear-gradient(
+                     180deg, rgba(0, 0, 0, 0) 0%, #3083bb 100%);
+                    opacity: 0.8;
+                    border-bottom-right-radius: 10px;
+
+                    
+                }
+                
+                img{
+                    height: 400px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                   }
+                   .text{
+                    position: absolute;
+                    bottom: 5%;
+                    left: 30%;
+                    color: #fff;
+                    text-align: center;
+                    z-index: 2;
+                   h3{
+                       font-size: 2rem;
+                       font-weight: 900;
+                       border-bottom-color: #000;
+                       text-shadow:2px 3px rgba(0, 0, 0, 0.26);
+                   }
+                   p{
+                    text-shadow:2px 2px rgba(0, 0, 0, 0.26);
+                   }
+                   i{
+                       transition: 0.3s ease-in-out;
+                       &:hover{
+                           transform: scale(1.2);
+                       }
+                   }
+                }
+                }
+        
+        .bottom{
+            text-align: center;
+           p{
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 0 180px;
+           }
+          .btn{
+              padding: 15px 0;
+           
+              a{
+                text-decoration: none;
+                padding: 12px 35px;
+                border: 2px solid $myColor;
+                border-radius: 30px;
+                color: #fff;
+                font-weight: 700;
+                transition: 0.3s ease-in-out;
+                box-shadow: 0 2px 10px 2px #98cb4694;
+                &:hover{    
+                      background: $myColor;
+
+                }
+            }
+            span{
+                color: #fff;
+                padding-left: 10px;
+                font-weight: 700;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    span{
+                        color: $myColor;
+                    }
+                }
+            }
+          }
+        }
+    } 
+//---------Three end-----------------

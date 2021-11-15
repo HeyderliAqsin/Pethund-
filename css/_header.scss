@@ -1,0 +1,296 @@
+//-----------Header start--------------
+#header{
+    position: absolute;
+    width:100%;
+    top:0;
+    z-index: 99;
+      .top-header{
+        background-color: rgba(255,255,255,.1);
+        padding: 20px 0;
+        align-items: center;
+        .header-top-left{
+         i{
+            padding-left: 20px;
+             font-size: 1.3rem;
+             color: $myColor;
+          
+         } 
+         a{
+             color: #fff;
+             text-decoration: none;
+         }  
+        span{
+            color: #fff;
+            padding-left: 10px;
+            font-size: 0.9rem;
+            transition: .5s ease-in-out;
+            &:hover{
+                color: $myColor;
+            }
+        }
+        }
+        .header-top-right{
+            align-items: center;
+            i{
+                color: #fff;
+                padding-right: 15px;
+                font-size: 1.2rem;
+                transition: .5s ease-in-out;
+                &:hover{
+                    color: $myColor;
+                }
+            }
+            span{
+                color: #fff;
+                padding-right: 15px;
+                font-size: 0.9rem;
+            }
+        }
+  }
+  .bottom-header{
+    position: relative;
+    padding: 15px 0;
+    .logo{
+        #darkImg{
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
+    &.head-active{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #fff;
+      padding: 10px 0;
+      box-shadow: 0 0 5px 2px #ccc;
+      z-index: 1;
+      transition: 0.3s ease-in-out;
+            nav{
+            ul{
+                li{
+                    a{
+                        color: #888;
+                    }
+                    i{
+                        color: #888;
+
+                    }
+                    button{
+                        a{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        nav{
+            ul{
+                padding-left: 10px;
+
+                li{
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                   margin-right: 20px;
+                    &:first-child{
+                        a{
+                            color:$myColor;
+                        }
+                        i{
+                            color:$myColor;
+    
+                        }
+                    }
+                
+                    a{
+                         text-decoration: none;
+                         color: #fff;
+                         transition: .3s ease-in-out;
+                         padding: 8px;
+                         position: relative;
+                         i{
+                            color:#fff;
+                            font-size: 1rem;
+                            transition: .3s ease-in-out; 
+                            padding-left: 5px;     
+        
+                        }
+    
+                    }
+                  
+                    &.dropped{
+                        position: relative;
+                        &:hover{
+                            a{
+                                color:$myColor;
+                            }
+                            i{
+                                font-size: 0.7rem;
+                                color: $myColor;
+                            }
+                        }
+                        &:hover{
+                            .dropDown{
+                                visibility: visible;
+                                opacity: 1;
+                                transform:translateY(0);
+                                &::before{
+                                    content: "";
+                                    position: absolute;
+                                    width: 18px;
+                                    height: 18px;
+                                    border-radius: 3px;
+                                    background-color: #fff;
+                                    top:-6px;
+                                    left:40px;
+                                    transform: rotate(45deg);
+                                }
+                                li:hover{
+                                    background: $myColor;
+                                    border-radius: 20px;
+                                    a{
+                                        color:#fff;
+                                    }
+                                    &::after{
+                                        background:#fff;
+                                    }
+                                }
+                                a{
+                                    color:$myColor2;
+                                    text-decoration: none;
+                                    padding-left: 40px;
+                                }                        
+                            }
+                        }                
+                        .dropDown{
+                            position: absolute;
+                            top: 140%;
+                            background: #fff;
+                            padding:15px 10px;
+                            min-width: 220px;
+                            opacity: 0;
+                            visibility: hidden;
+                            border-radius: 10px;
+                            transform: translateY(15px);
+                            transition: transform .3s ease-in-out;
+                            box-shadow: 0px 0px 20px 1px rgba(26, 25, 25, 0.13);
+                            li{
+                                position: relative;
+                                margin: 10px 0;
+                                &::after{
+                                    content: "";
+                                    position: absolute;
+                                    top: 10px;
+                                    left:20px;
+                                    background: $myColor;
+                                    border-radius: 50%;
+                                    width: 10px;
+                                    height: 10px;
+                                    
+                                }
+                                &.firstly{
+                                    background: $myColor;
+                                    border-radius: 15px;
+                                    position: relative;
+                                  &::after{
+                                    content: "";
+                                    position: absolute;
+                                    top: 10px;
+                                    left:20px;
+                                    background: #fff;
+                                    border-radius: 50%;
+                                    width: 10px;
+                                    height: 10px;
+                                }
+                                    a{
+                                        color:#fff;
+                                    }
+                                }
+                               
+                            }
+                        }
+                    }
+                   
+                    
+                }
+            }
+        }
+       .btn{
+        button{
+            padding: 10px 25px;
+            background-color:$myColor1;
+            border-radius: 3px;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            a{
+                position: relative;
+                color: #fff;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            &::before{
+                content:'';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 0%;
+                height: 200px;
+                background-color: #98cb46;
+                transform: translateY(-45%)skew(
+                25deg)scale(0);
+                transition: 0.3s ease-in-out;
+                
+            }
+            &:hover{
+                &::before{
+                    content:'';
+                    position: absolute;
+                    top: 50%;
+                    left: -10%;
+                    width: 115%;
+                    height: 200px;
+                    background-color: #27304B;
+                    transform: translateY(-55%)skew(
+                    20deg)scale(1);
+                    color: #fff; 
+                    border-radius: 3px;
+                }
+                a{
+                    color:#fff;
+                }
+            }
+            
+        }
+       }
+        .mobile{
+            visibility: hidden;
+            opacity: 0;
+            &.mobile-active{
+                visibility: hidden;
+                opacity: 0;
+         
+             }
+        }
+         
+    }
+  
+}
+ 
+
+//Scroll-indicator
+#myProgress {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    width: 100%;
+    background-color: transparent;
+    #myBar {
+        width: 1%;
+        height: 5px;
+        background-color: $myColor;
+      }
+  }
+//-----------Header end--------------

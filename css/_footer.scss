@@ -1,0 +1,163 @@
+//----------Footer start---------
+#footer{
+    background: $myColor2;
+    position: relative;
+    padding-top: 120px;
+    .top-footer{
+        background: #fff;
+        position: absolute;
+        top:-10%;
+        left: 7%;
+        width: 85%;
+        box-shadow:1px -6px 11px 0px #ccc;
+        img{
+            width: 300px;
+        }
+        .text{
+            padding-left: 20px;
+            align-items: center;
+            
+            .icon{
+                i{  
+                    background: $myColor;
+                    padding: 20px;
+                    border-radius: 50%;
+                    color: #fff;
+                    font-size: 2.5rem;
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        transform: rotate(5deg);
+                    }
+                }
+            }
+            .txt{
+                padding-left: 15px;
+                h3{
+                    font-weight: 900;
+                    color: $myColor2;
+                    span{
+                        color: $myColor1;
+                         font-weight: 900;
+                    }
+                }
+
+            }
+        }
+    }
+    .head{
+        padding: 20px 0;
+        .social{
+            color: #fff;
+            span{
+                padding-right: 10px;
+            }
+            .icon{
+                border: 1px solid rgba(255, 255, 255, 0.418);
+                padding: 6px 36px 6px 25px;
+                border-radius: 25px;
+              
+                i{
+                    margin-left: 25px;
+                    font-size: 1.4rem;
+                    cursor: pointer;
+                    &:hover{
+                         animation: myAni3 1.5s infinite;
+                         color:$myColor;
+                        
+                     }
+                }
+            }
+        }
+    }
+    .category-item{
+        padding-bottom: 40px;
+            span:first-child{
+                color: $myColor;
+            }
+            h4{
+                color: #fff;
+                padding: 10px 0;
+            }
+            p{
+                color: #fff;
+                
+            }
+            .text{
+             
+                p{
+                    color: $myColor1;
+                    font-weight: 700;
+                    span{
+                        color: #fff;
+                        border-bottom: 1px dashed #888
+                    }
+                }
+              
+            }
+        
+    }
+    .category-item-middle{
+        padding-left: 50px;
+        .text{
+            span{
+                color:$myColor;
+            }
+            h4{
+                color:#fff;
+                padding: 10px 0;
+            }
+        }
+        ul{
+            li{
+                line-height: 2;
+                i{
+                    color: $myColor1;
+                    padding-right: 10px;
+                   
+                }
+                a{
+                    text-decoration: none;
+                    color:#fff;
+                    &:hover{
+                        border-bottom: 1px solid #ccc;
+                    }
+                }
+            }
+        }
+    }
+    .bottom{
+        background-color: #1C2339;
+        position: relative;   
+        height: 160px;     
+        .dog{
+            justify-content: space-between;
+            align-items: center;
+            line-height: 150px;
+            .mid,.las{
+                    span{
+                        color:#ccc;
+                        a{
+                            color: #fff;
+                            text-decoration: none;
+                            font-size: .9rem;
+                            color:$myColor1;
+                        }
+                    }
+               }
+            .img{
+                &:hover{
+                    img{
+                        animation: myAni4 .7s forwards;
+                    }
+                }
+                img{
+                    position:absolute;
+                    bottom: 0;
+                    
+                }
+         
+        }
+    }
+}
+}
+//----------Footer end-----------

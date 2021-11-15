@@ -1,0 +1,61 @@
+//-----------First start-------------
+
+#first{
+    .slider{
+        .bg{
+        // position: absolute;
+        position: relative;
+        img{
+            object-fit: cover;
+            height: 100vh;
+            width: 100%;
+        }
+    }
+    }
+    .text{
+        position: absolute;
+        top:70%;
+        left:10%;
+        width:100%;
+        transform: translateY(-60%);
+        color: #fff;
+        span{
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+     .htext{
+        padding: 15px 0;
+
+        h1{
+            font-size: 3.5rem;
+            font-weight: 900;
+        }
+     }
+     .bottom{
+         padding: 30px 0;
+      
+        a{     
+            text-decoration: none;
+            background-color: $myColor;
+            padding: 12px 35px;
+            color: #fff;
+            font-weight: 700;
+            border-radius: 5px;
+            box-shadow: 0 2px 13px 0px $myColor;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                background-color: $myColor1;
+            }
+        }
+        .last{
+            span{
+                margin-left: 20px;
+            }
+        }
+        
+     }
+
+        
+    }
+}
+//-----------First end---------------

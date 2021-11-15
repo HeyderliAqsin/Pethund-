@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="vendors/texttillate/assets/animate.css">
+    <link rel="stylesheet" href="vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendors/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Loader efffect -->
+    <div class="loader">
+        <img src="images/giphy (1).gif" alt="">
+    </div>
+    <!-- header start -->
+    <header id="header">
+        <div class="top-header ">
+            <div class="container">
+                <div class="head d-flex flex-wrap justify-content-between align-items-center ">
+                    <div class="header-top-left d-flex">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Pet Street 123 - New York</span>
+                        <i class="far fa-envelope"></i>
+                        <span>
+                            <span>email@yoursite.com</span>
+                        </span>
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>(123) 456-789</span>
+                    </div>
+                    <div class="header-top-right d-flex">
+                        <span>We are social</span>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+          <div class="container ">
+              <div class="bottom d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <img id="myImg" width="220px" src="images/logo-light.png" alt="">
+                    <img class="myImg2 d-none" width="220px" src="images/logoDark.png" alt="">
+                </div>
+                <div class="menu-bar d-lg-none  p-2">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+                <nav>
+                    <ul class="d-flex justify-content-around list-unstyled align-items-center ">
+                        <li class="dropped"><a href="#">Home <i class="fas fa-angle-down"></i></a>
+                            <ul class="dropDown list-unstyled">
+                                <li class="firstly"><a href="#">item 1</a></li>
+                                <li><a href="#">item 2</a></li>
+                                <li><a href="#">item 3</a></li>
+                                <li><a href="#">item 4</a></li>
+                                <li><a href="#">item 5</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropped"><a href="#">Pages<i class="fas fa-angle-down"></i></a>
+                            <ul class="dropDown list-unstyled">
+                                <li><a href="#">item 1</a></li>
+                                <li><a href="#">item 2</a></li>
+                                <li><a href="#">item 3</a></li>
+                                <li><a href="#">item 4</a></li>
+                                <li><a href="#">item 5</a></li>
+                                <li><a href="#">item 6</a></li>
+                                <li><a href="#">item 7</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropped"><a href="#">Services<i class="fas fa-angle-down"></i> </a>
+                            <ul class="dropDown list-unstyled">
+                                <li><a href="#">item 1</a></li>
+                                <li><a href="#">item 2</a></li>
+                                <li><a href="#">item 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropped"><a href="#">Gallery<i class="fas fa-angle-down"></i> </a>
+                            <ul class="dropDown list-unstyled">
+                                <li><a href="#">item 1</a></li>
+                                <li><a href="#">item 2</a></li>
+                                <li><a href="#">item 3</a></li>
+                                <li><a href="#">item 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropped"><a href="#">News<i class="fas fa-angle-down"></i></a>
+                            <ul class="dropDown list-unstyled">
+                                <li><a href="#">item 1</a></li>
+                                <li><a href="#">item 2</a></li>
+                                <li><a href="#">item 3</a></li>
+                                <li><a href="#">item 4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a> </li>
+                        <div class="btn">
+                            <button><a href="#">DONATE</a></button>
+                        </div>
+                    </ul>  
+                    
+                </nav>
+               
+                <div class="mobile d-lg-none">
+                    <ul class="d-flex list-unstyled">
+                        <li class="dropped"><a href="">Home </a> 
+                            <ul class="dropped-item list-unstyled">
+                                <li><a href="">List 1</a></li>
+                                <li><a href="">List 2</a></li>
+                                <li><a href="">List 3</a></li>
+                                <li><a href="">List 4</a></li>
+                                <li><a href="">List 5</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropped"><a href="">Pages</a>
+                            <ul class="dropped-item list-unstyled">
+                                <li><a href="">List 1</a></li>
+                                <li><a href="">List 2</a></li>
+                                <li><a href="">List 3</a></li>
+                                <li><a href="">List 4</a></li>
+                                <li><a href="">List 5</a></li>
+                                <li><a href="">List 6</a></li>
+                                <li><a href="">List 7</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropped"><a href="">Services</a>
+                            <ul class="dropped-item list-unstyled">
+                                <li><a href="">List 1</a></li>
+                                <li><a href="">List 2</a></li>
+                                <li><a href="">List 3</a></li>
+                                <li><a href="">List 4</a></li>
+                                <li><a href="">List 5</a></li>
+                                <li><a href="">List 6</a></li>
+                                <li><a href="">List 7</a></li>
+                                <li><a href="">List 8</a></li>
+                                <li><a href="">List 9</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropped"><a href="">Gallery</a>
+                            <ul class="dropped-item list-unstyled">
+                                <li><a href="">List 1</a></li>
+                                <li><a href="">List 2</a></li>
+                                <li><a href="">List 3</a></li>
+                                <li><a href="">List 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropped"><a href="">News</a>
+                            <ul class="dropped-item list-unstyled">
+                                <li><a href="">List 1</a></li>
+                                <li><a href="">List 2</a></li>
+                                <li><a href="">List 3</a></li>
+                            </ul>
+                        </li>
+                        <li><button><a href="#">DONATE</a></button></li>
+                    </ul>
+                </div> 
+              </div>
+       
+          </div>  
+     </div> 
+    </header>
+    <!-- header end -->
+    <!-- First start -->
+    <section id="first">
+        <div class="slider">
+            <div class="bg">
+                <img class="img-fluid" data-aos="zoom-out" data-aos-duration="3000" src="images/h5_slider_2.jpg" alt="">
+                        <div class="text">
+                                <div class="SPAN"data-aos="fade-right">
+                            <span >Pet Care Services,in New York City</span>
+                                </div>
+                            <div class="htext " data-aos="fade-up" data-aos-duration="4000">
+                                <h1> We Provide Care,<br> That Your Pet <br> Deserves!</h1>
+                            </div>
+                            <div class="bottom d-flex align-items-center">
+                                <a href="#">GIVE US CALL</a> 
+                                <div class="last">
+                                    <span>(+44) 123 456 789</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            <div class="bg">
+                <img class="img-fluid" data-aos="zoom-in" data-aos-duration="3000" src="images/h5_slider_1.jpg" alt="">
+                  <div class="text">
+                                <div class="SPAN"data-aos="fade-right">
+                            <span >Pet Care Services,in New York City</span>
+                                </div>
+                            <div class="htext " data-aos="fade-up" data-aos-duration="4000">
+                                <h1> Find Out Your<br> Companion On <br> Pet Shelter</h1>
+                            </div>
+                            <div class="bottom d-flex align-items-center">
+                                <a href="#">GIVE US CALL</a> 
+                                <div class="last">
+                                    <span>(+44) 123 456 789</span>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+      
+        </div>
+        <div id="myProgress">
+            <div id="myBar"></div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <!-- First end -->
+    <!-- welcome start -->
+    <section id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-side " data-aos="fade-right">
+                        <img class="img-fluid" src="images/bear_Image.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-side">
+                        <h6 class="tlt" data-in-effect="rollIn"> Quality & Experience <img width="60px"
+                                src="images/heading-icon (1).png" alt=""></h6>
+                        <h2> <span>Welcome to</span> Pethund</h2>
+                        <p>At Pethund, the ambition is that you should always feel welcome both as an advertiser and a
+                            visitor. A modern and easy-to-manage page makes it easier for Users to maneuver forward. or
+                            then randomised words which don’t look even slightly believable you need to be sure there
+                            isn’t anything embarrassing vestibu lum at eros.</p>
+                        <div class="stamp">
+                            <i class="fas fa-paw"></i> <span>Abore et dolore magna aliqua ut enim
+                                veniam</span>
+                        </div>
+                        <div class="stamp">
+                            <i class="fas fa-paw"></i> <span>Quis nostrud exercitation ullamco
+                                laboris aliquip </span>
+                        </div>
+                        <div class="stamp">
+                            <i class="fas fa-paw"></i> <span>Eiusmod tempor incididunt
+                                labore.</span>
+                        </div>
+                        <div class="btn" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="#">DISCOVER MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Three start -->
+    <section id="Three">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                    <div id="firstly" data-aos="fade-right">
+                        <img class="w-100" src="images/blog_7.jpg" alt="">
+                        <div class="text">
+                            <i class="fas fa-paw fa-2x"></i>
+                            <h3>We Heal</h3>
+                            <p>Quick Veterinary Services</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                    <div id="secondly"  data-aos="fade-up">
+                        <img class="w-100" src="images/blog_3.jpg" alt="">
+                        <div class="text">
+                            <i class="fas fa-paw fa-2x"></i>
+                            <h3>We Heal</h3>
+                            <p>Quick Veterinary Services</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 p-0 " >
+                    <div id="thirdly" data-aos="fade-left">
+                        <img class="w-100" src="images/f_gallery3.jpg" alt="">
+                        <div class="text">
+                            <i class="fas fa-paw fa-2x"></i>
+                            <h3>We Heal</h3>
+                            <p>Quick Veterinary Services</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In
+                        aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum
+                        ipsum.</p>
+                    <div class="btn">
+                        <a href="#">CONTACT US</a> <span>(+44) 123 456 789</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Three end
+    <!-- Service start -->
+    <section id="Service">
+        <div class="top-header">
+            <span>What We Do For You? <img src="images/heading-icon (1).png" alt=""></span>
+            <h2><span>Our</span> Services</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="category-item d-flex justify-content-between ">
+                        <div class="img">
+                            <img width="80px" src="images/service-icon1.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Per Sitting</h2>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t
+                                anything
+                            </p>
+                            <a href="#">Read More</a>
+                            <span class="arrow"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="category-item d-flex">
+                        <div class="img">
+                            <img width="80px" src="images/service-icon2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Per Sitting</h2>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t
+                                anything
+                            </p>
+                            <a href="#">Read More</a> <span class="arrow"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="category-item d-flex">
+                        <div class="img">
+                            <img width="80px" src="images/service-icon3.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Per Sitting</h2>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t
+                                anything
+                            </p>
+                            <a href="#">Read More</a> <span class="arrow"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="category-item d-flex">
+                        <div class="img">
+                            <img width="80px" src="images/service-icon4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Per Sitting</h2>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t
+                                anything
+                            </p>
+                            <a href="#">Read More</a> <span class="arrow"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="category-item d-flex">
+                        <div class="img">
+                            <img width="80px" src="images/service-icon5.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Per Sitting</h2>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t
+                                anything
+                            </p>
+                            <a href="#">Read More</a> <span class="arrow"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="category-item d-flex">
+                        <div class="img">
+                            <img width="80px" src="images/service-icon6.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Per Sitting</h2>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t
+                                anything
+                            </p>
+                            <a href="#">Read More</a> <span class="arrow"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#">VIEW ALL SERVICES</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service end -->
+    <!-- About Us -->
+    <section id="About">
+        <div class="row m-0 ">
+            <div class="col-lg-5 p-0">
+                <div class="left">
+                    <div class="img">
+                        <img class="w-100" src="images/h5_accord.jpg" alt="">
+                    </div>
+                    <div class="video-popup">
+                        <div class="video-content d-flex">
+                            <a class="video-play-button video-default" href="https://www.youtube.com/watch?v=ur0p-fut_ww" savefrom_lm_index="0" savefrom_lm="1"> <svg viewBox="0 0 512 512"><g><path d="M431.36,80.64A248,248,0,1,0,80.64,431.36,248,248,0,1,0,431.36,80.64ZM420.05,420.05A232,232,0,0,1,91.95,91.95a232,232,0,0,1,328.1,328.1Z"></path><path d="M176,464.7a7.982,7.982,0,0,1-2.963-.571A224.077,224.077,0,0,1,32,256a8,8,0,0,1,16,0A208.073,208.073,0,0,0,178.965,449.271,8,8,0,0,1,176,464.7Z"></path><path d="M216.009,476.305a8.072,8.072,0,0,1-1.482-.138c-5.557-1.041-11.141-2.309-16.595-3.77a8,8,0,1,1,4.136-15.455c5.063,1.355,10.245,2.533,15.405,3.5a8,8,0,0,1-1.464,15.865Z"></path></g><g><path d="M208.538,352a8,8,0,0,1-8-8V168a8,8,0,0,1,12.131-6.851l145.924,88a8,8,0,0,1,0,13.7l-145.924,88A8,8,0,0,1,208.538,352Zm8-169.833V329.833L338.971,256Z"></path></g></svg> </a>
+                            <span><a href="http://savefrom.net/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dur0p-fut_ww&amp;utm_source=userjs-chrome&amp;utm_medium=extensions&amp;utm_campaign=link_modifier" target="_blank" title="Get a direct link" savefrom_lm="1" savefrom_lm_is_link="1" style="background-image: url(&quot;data:image/gif;base64,R0lGODlhEAAQAOZ3APf39+Xl5fT09OPj4/Hx8evr6/3+/u7u7uDh4OPi497e3t7e3/z8/P79/X3GbuXl5ubl5eHg4WzFUfb39+Pj4lzGOV7LOPz7+/n6+vn5+ZTLj9/e387Ozt7f3/7+/vv7/ISbePn5+m/JV1nRKXmVbkCnKVrSLDqsCuDh4d/e3uDn3/z7/H6TdVeaV1uSW+bn5v39/eXm5eXm5kyHP/f39pzGmVy7J3yRd9/f3mLEKkXCHJbka2TVM5vaZn6Wdfn6+YG/c/r5+ZO/jeLi41aHTIeageLn4f39/vr6+kzNG2PVM5i+lomdf2CXYKHVmtzo2YXNeDqsBebl5uHh4HDKWN3g3kKqEH6WeZHTXIPKdnSPbv79/pfmbE7PHpe1l4O8dTO5DODg4VDLIlKUUtzo2J7SmEWsLlG4NJbFjkrJHP7+/VK5Nfz8+zmnC3KKa+Hg4OHh4Y63j/3+/eDg4Ojo6P///8DAwP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAHcALAAAAAAQABAAAAfWgHd2g4SFhYJzdYqLjIpzgx5bBgYwHg1Hk2oNDXKDFwwfDF5NLmMtcStsn4MhGT8YS04aGmU1QRhIGYMTADQAQlAODlloAMYTgwICRmRfVBISIkBPKsqDBAREZmcVFhYVayUz2IMHB1dWOmImI2lgUVrmgwUFLzdtXTxKSSduMfSD6Aik48MGlx05SAykM0gKhAAPAhTB0oNFABkPHg5KMIBCxzlMQFQZMGBIggSDpsCJgGDOmzkIUCAIM2dOhEEcNijQuQDHgg4KOqRYwMGOIENIB90JBAA7&quot;); background-repeat: no-repeat; width: 16px; height: 16px; display: inline-block; border: none; text-decoration: none; padding: 0px; position: relative;"></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 p-0 ">
+                <div class="right">
+                    <div class="container">
+                        <div class="text">
+                            <span>Get To Know Us <img src="images/heading-icon.png" alt=""></span>
+                            <h1>About Us <span>Few words</span></h1>
+                            <p>Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id.
+                                In
+                                aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum
+                                ipsum
+                                convall.</p>
+                        </div>
+                        <div id="accordion">
+                            <i class="fas fa-chevron-down"></i> <span>Our Philosophy</span>
+                            <p>Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec
+                                lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
+                            <i class="fas fa-chevron-down"></i> <span>Our Philosophy</span>
+                            <p>Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec
+                                lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
+                            <i class="fas fa-chevron-down"></i> <span>Our Philosophy</span>
+                            <p> Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec
+                                lobortis
+                                maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About end -->
+    <!-- Meet start -->
+    <section id="Meet">
+        <div class="top-head">
+            <span>Pet Care Staff <img src="images/heading-icon.png" alt=""></span>
+            <h1>Meet Our <span>Groomers</span></h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="category-item">
+                        <div class="img">
+                            <img class="w-100" src="images/team_01-310x188.jpg" alt="">
+                            <div class="icon">
+                                <i class="fab fa-twitter "></i>
+                                <i class="fab fa-facebook-f "></i>
+                                <i class="fab fa-instagram "></i>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Megan Smith</h4>
+                            <p>Pet Trainer</p>
+                            <hr>
+                            <a href="#">Read More<span class="arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="category-item">
+                        <div class="img">
+                            <img class="w-100" src="images/team_02-310x188.jpg" alt="">
+                            <div class="icon">
+                                <i class="fab fa-twitter "></i>
+                                <i class="fab fa-facebook-f "></i>
+                                <i class="fab fa-instagram "></i>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Megan Smith</h4>
+                            <p>Pet Trainer</p>
+                            <hr>
+                            <a href="#">Read More<span class="arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="category-item">
+                        <div class="img">
+                            <img class="w-100" src="images/team_03-1-310x188.jpg" alt="">
+                            <div class="icon">
+                                <i class="fab fa-twitter "></i>
+                                <i class="fab fa-facebook-f "></i>
+                                <i class="fab fa-instagram "></i>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>Megan Smith</h4>
+                            <p>Pet Trainer</p>
+                            <hr>
+                            <a href="#">Read More<span class="arrow"></span></a>
+                        </div>
+                    </div>
+                </div>              
+                <div class="bottom">
+                    <h6>Meet our professionals</h6>
+                    <p>We have an experienced qualified team to take care of your best friend</p>
+                    <a href="#" data-aos="zoom-in">VIEW ALL TEAM</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Meet end -->
+    <!-- CUrve start -->
+    <section id="Curve">
+        <div class="img-effect-up">
+            <img src="images/h5_wave_up.png" alt="">
+        </div>
+        <div class="img-effect-down">
+            <img src="images/h5_wave_down.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="category">
+                        <div class="img">
+                            <img src="images/dog-collar.png" alt="">
+                        </div>
+                        <div class="text">
+                            <i class="fas fa-plus"></i>
+                            <div class="counter" data-target="520">0</div>
+                            <p>Pet Awards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="category">
+                        <div class="img">
+                            <img src="images/dog-walking.png" alt="">
+                        </div>
+                        <div class="text">
+                            <i class="fas fa-plus"></i>
+                            <div class="counter" data-target="190">0</div>
+                            <p>Pet Awards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="category">
+                        <div class="img">
+                            <img src="images/trophy.png" alt="">
+                        </div>
+                        <div class="text">
+                            <i class="fas fa-plus"></i>
+                            <div class="counter" data-target="112">0</div>
+                            <p>Pet Awards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="category">
+                        <div class="img">
+                            <img src="images/scissors.png" alt="">
+                        </div>
+                        <div class="text">
+                            <i class="fas fa-plus"></i>
+                            <div class="counter" data-target="795">0</div>
+                            <p>Pet Awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Curve end -->
+    <!-- Our start -->
+    <section id="Our">
+        <div class="top-image">
+            <span>Image Tour <img src="images/heading-icon.png" alt=""></span>
+            <h1>Our<span> Gallery</span></h1>
+        </div>
+        <div class="container">
+            <div class="row m-0">
+                <div class="col-lg-4 col-sm-12 p-0 m-0">
+                    <div class="img">
+                        <img src="images/img_gallery1-e1597325507753.jpg" alt="">
+                        <div class="icon">
+                            <a href="##"> <i class="fas fa-search fa-2x"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="images/img_gallery2-e1597325525292.jpg" alt="">
+                        <div class="icon">
+                            <a href="##"> <i class="fas fa-search fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 p-0 m-0">
+                    <div class="img">
+                        <img src="images/img_gallery6-e1597325545395.jpg" alt="">
+                        <div class="icon">
+                            <a href="##"> <i class="fas fa-search fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="images/img_gallery7-e1597324859386.jpg" alt="">
+                        <div class="icon">
+                            <a href="#"> <i class="fas fa-search fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 p-0 m-0">
+                    <div class="img">
+                        <img src="images/img_gallery3-e1597325534111.jpg" alt="">
+                        <div class="icon">
+                            <a href="#"> <i class="fas fa-search fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="images/img_gallery5-e1597325553358.jpg" alt="">
+                        <div class="icon">
+                            <a href="#"> <i class="fas fa-search fa-2x"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button class="btn-alt" data-aos="fade-up" data-aos-duration="1000">
+                <a href="#">VIEW FULL GALLERY</a>
+            </button>
+        </div>
+    </section>
+    <!-- Our end -->
+    <!-- Feedback start -->
+    <section id="Feedback">
+        <div class="container">
+            <div class="top-feedback">
+                <span>What Our Customers Are Saying <img src="images/heading-icon.png" alt=""></span>
+                <h1><span>Amazing</span> Feedback</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <div class="left" data-aos="zoom-in">
+                        <img class="img-fluid" src="images/testi_dog.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <div class="right">
+                        <div class="top">
+                            <img class="img-fluid" src="images/testimonial-icon (1).png" alt="">
+                            <p> And taped a amazingly lazily far gosh oh bald oh raffishly
+                                ouch ladybug far that the and alas slapped alas far brusque
+                                pridefully kneeled python horse alas sound because more
+                                prodigiously
+                            </p>
+                            <div class="img d-flex">
+                                <div class="photo d-flex">
+                                    <img width="80px" src="images/testi_ava2 (1).jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h6 class="m-0 p-0">Kevin Martin</h6>
+                                    <span>Pet Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feedback end -->
+    <!-- LatestNews start-->
+    <section id="LatestNews">
+        <div class="top-head">
+            <span>Recent Blog Post<img src="images/heading-icon.png" alt=""></span>
+            <h1>Latest News<span>& Articles</span></h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="category-item">
+                        <div class="img">
+                            <img class="w-100" src="images/Latest.jpg" alt="">
+                        </div>
+                        <div class="icon d-flex justify-content-between">
+                            <span>09<br>JUL</span>
+                            <a href="#">0 Comments</a>
+                        </div>
+                        <div class="text">
+                            <h4>Overload Is When A Girl Is Exhausted From Fun</h4>
+                            <p> Proin viverra nisi at nisl imperdiet auctor. Donec ornare, est sed tincidunt placerat,
+                                sem mi suscipit mi.</p>
+                            <hr>
+                            <a href="#">Read More<span class="arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="category-item">
+                        <div class="img">
+                            <img class="w-100" src="images/Latest 1.jpg" alt="">
+                        </div>
+                        <div class="icon d-flex justify-content-between">
+                            <span>09<br>JUL</span>
+                            <a href="#">3 Comments</a>
+                        </div>
+                        <div class="text">
+                            <h4>Overload Is When A Girl Is Exhausted From Fun</h4>
+                            <p> Proin viverra nisi at nisl imperdiet auctor. Donec ornare, est sed tincidunt placerat,
+                                sem mi suscipit mi.</p>
+                            <hr>
+                            <a href="#">Read More<span class="arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="category-item">
+                        <div class="img">
+                            <img class="w-100" src="images/Latest 2.jpg" alt="">
+                        </div>
+                        <div class="icon d-flex justify-content-between">
+                            <span>09<br>JUL</span>
+                            <a href="#">0 Comments</a>
+                        </div>
+                        <div class="text">
+                            <h4>Overload Is When A Girl Is Exhausted From Fun</h4>
+                            <p> Proin viverra nisi at nisl imperdiet auctor. Donec ornare, est sed tincidunt placerat,
+                                sem mi suscipit mi.</p>
+                            <hr>
+                            <a href="#">Read More<span class="arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <a href="#">VIEW ALL TEAM</a>
+                </div>
+            </div>
+        </div>
+        <div class="next">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="prev">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+    </section>
+    <!-- Footer start -->
+    <footer id="footer">
+        <div class="container">
+            <div class="top-footer d-flex">
+                <img src="images/footer_image1 (1).jpg" alt="">
+                <div class="text d-flex">
+                    <div class="icon">
+                        <i class="fas fa-headphones-alt fa-2x"></i>
+                    </div>
+                    <div class="txt">
+                        <h3>Have Questions? Call Us <span>+1 (800) 123 456 789</span></h3>
+                        <p>In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec 
+                            elementum ipsum convall.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="head d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <img width="220px" src="images/logo-light.png" alt="">
+                    </div>
+                    <div class="social d-flex align-items-center">
+                        <span>We are social</span>
+                        <div class="icon d-flex">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-item">
+                        <span>________</span>
+                        <h4>About PetHund</h4>
+                        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-item-middle">
+                        <div class="text">
+                            <span>________</span>
+                            <h4>Explore</h4>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-angle-right"></i><a href="#">Item 1</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="#">Item 1</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="#">Item 1</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="#">Item 1</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="#">Item 1</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-item-middle">
+                        <div class="text">
+                            <span>________</span>
+                            <h4>Useful links</h4>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li> <i class="fas fa-angle-right"></i><a href="#">Item 1</a></li>
+                            <li> <i class="fas fa-angle-right"></i><a href="#">Item 1</a></li>
+                            <li> <i class="fas fa-angle-right"></i><a href="#">Item 1</a></li>
+                            <li> <i class="fas fa-angle-right"></i><a href="#">Item 1</a></li>
+                            <li> <i class="fas fa-angle-right"></i><a href="#">Item 1</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-item">
+                        <span>________</span>
+                        <h4>Working Hours</h4>
+                        <p>Our support available to help you 24 hours a day. We provide our best.</p>
+                        <div class="text">
+                            <p> Mon – Fri :<span>08.00 am – 20.00 pm</span> </p>
+                            <p> Mon – Fri :<span>08.00 am – 20.00 pm</span> </p>
+                            <p> Mon – Fri :<span>08.00 am – 20.00 pm</span> </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom ">
+            <div class="container">
+                <div class="dog d-flex">
+                    <div class="img">
+                        <img src="images/footer_hero (1).png" alt="">
+                    </div>
+                    <div class="mid">
+                        <span>Copyright © 2020 <a href="#">7iquid</a> All Rights Reserved</span>
+                    </div>
+                    <div class="las">
+                        <span>Designed By <a href="#">Mannatstudio</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Scroll -->
+    <div class="bottom-scroll">
+        <i class="fas fa-long-arrow-alt-up"></i>
+    </div>
+
+
+
+    <script src="vendors/Jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            sync: true,
+            disable: function() {
+           var maxWidth = 700;
+           return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
+    <script src="vendors/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

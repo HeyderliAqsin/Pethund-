@@ -1,0 +1,76 @@
+
+$myColor:#F15E42;
+$myColor1:#98CB46;
+$myColor2:#27304B;
+@import '_header';
+@import '_first';
+@import '_welcome';
+@import '_Three';
+@import '_Service';
+@import '_About';
+@import '_loader';
+@import '_Meet';
+@import '_Curve';
+@import '_Our';
+@import '_Feedback';
+@import '_LatestNews';
+@import '_scroll';
+@import '_footer';
+@import '_resposive';
+
+@keyframes myAni{
+    0%{
+        transform: scale(0.8) rotate(180deg);
+    }
+    50%{
+        transform: scale(1.6) rotate(360deg);
+    }
+    100%{
+        transform: scale(0.8) rotate(180deg);
+
+
+    }
+}
+@keyframes myAni2{
+    0%{
+        transform: translateY(-8px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(4px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes myAni3{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0.9);
+
+
+    }
+}
+@keyframes myAni4{
+    0%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(0px)
+    }
+    75%{
+        transform: translateX(4px)
+
+    }
+    100%{
+        transform: translateX(0px)
+
+    }
+}

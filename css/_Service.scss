@@ -1,0 +1,137 @@
+//----------Service start------------
+#Service{
+    margin: 80px 0;
+
+    .top-header{
+        text-align: center;
+        padding: 40px 0;
+
+        span{
+            color: $myColor2;
+            font-size: 1rem;
+            font-weight: 500;
+           position: relative;
+            img{
+                width: 55px;
+                height: 55px;
+                position: absolute;
+                left: 20%;
+                top: -100%;
+                transform: translate(-50%,-100%);
+                z-index:-1;
+                animation: myAni 9s linear 0s infinite;
+
+            }
+        }
+        h2{
+            font-size: 3rem;
+            color: $myColor2;
+            font-weight: 900;
+            span{
+                color: $myColor;
+                font-size: 3rem;
+                font-weight: 900;
+
+            }
+        }
+    }
+    .category-item{
+        box-shadow: 0 0 10px 0px #ccc;
+        padding: 30px 40px;
+        margin: 10px 0;
+        .img{
+        transition: 0.3s ease-in-out;
+
+        }
+        &:hover{
+            .img{
+                transform: translateY(-8px);
+            }
+            .text{
+            
+                    .arrow{
+                     width: 20px;
+                    }
+                
+            }
+        }
+        .text{
+            padding-left: 40px;
+            h2{
+                color: $myColor1;
+                font-size: 1.4rem;
+                font-weight: 700;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    color:$myColor;
+                }
+            }
+            p{
+                color: #888;
+            }
+            a{
+                text-decoration: none;
+                color: $myColor2;
+                font-weight: 500;
+            }
+            .arrow{
+                display: inline-block;
+                width: 55px;
+                height: 2px;
+                background-color: #f15e42;
+                position: relative;
+                vertical-align: middle;
+                transition: 0.4s ease-in-out;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 2px;
+                    background-color: #f15e42;
+                    top: 3px;
+                    right: -3px;
+                    transform: rotate(
+                    -45deg);
+                    transform: rotate(
+                    -45deg);
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 2px;
+                    background-color: #f15e42;
+                    top: -3px;
+                    right: -3px;
+                    transform: rotate(
+                    45deg);
+                    transform: rotate(
+                    45deg);
+                }
+                }
+            }
+        }
+        .btns{
+            padding: 80px 0;
+            text-align: center;
+        
+            a{
+                padding: 14px 35px;
+                text-decoration: none;
+                color: $myColor2;
+                 border: 2px solid $myColor2;
+                 border-radius: 30px;
+                 font-weight: 500;
+                transition: .3s ease-in-out;
+                &:hover{
+                        background: $myColor;
+                        border: 2px solid $myColor;
+                        color: #fff;
+                        box-shadow: 0 5px 7px 0 #98cb466b;
+                    
+                }
+            }
+        }
+    }
+//----------Service end--------------

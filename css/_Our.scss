@@ -1,0 +1,129 @@
+//-----------Image start------------
+#Our{
+    padding: 80px 0;
+    .top-image{
+        text-align: center;
+        padding: 20px 0;
+        span{
+            font-weight: 500;
+            position: relative;
+            img{
+                width: 55px;
+                height: 55px;
+                position: absolute;
+                z-index: -1;
+                left: 10%;
+                top: -100%;
+                transform: translate(10%,-100%);
+                animation: myAni 4s linear 0s infinite;
+                
+            }
+        }
+        h1{
+            color: $myColor;
+            font-weight: 900;
+            span{
+                color: $myColor2;
+                font-weight: 900;
+            }
+        }
+    }
+    .img{
+        position: relative; 
+        margin: 20px 10px;
+        &:hover{
+            &::after{
+                visibility: visible;
+                opacity: 1;
+                transform:rotateY(180deg);
+            }
+            .icon{
+                opacity: 1;
+                visibility: visible;
+                 z-index: 2;             
+                 
+            }
+        }
+        &::after{
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f15f427a;
+            visibility: hidden;
+            opacity: 0;
+            transition: .3s ease-in-out;
+            
+        }
+        .icon{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            visibility: hidden;
+            opacity: 0;
+            a{
+                color: #fff;
+                i{
+                    transform: rotateY(-180deg);
+                }
+            }
+
+          
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            }
+      
+            }
+   
+    .btn-alt{
+        margin: 40px 0;
+        padding: 14px 45px;
+        border: none;
+        background-color:$myColor;
+        box-shadow: 0 5px 10px 0 #f15f428a;
+        border-radius: 5px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        &::before{
+            content:'';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0%;
+            height: 200px;
+            background-color: $myColor1;
+            transform: translateY(-45%)skew(
+            25deg)scale(0);
+            transition: 0.3s ease-in-out;
+            z-index: -1;
+        }
+        &:hover{
+            &::before{
+                content:'';
+                position: absolute;
+                top: 50%;
+                left: -10%;
+                width: 115%;
+                height: 200px;
+                background-color: $myColor1;
+                transform: translateY(-55%)skew(
+                25deg)scale(1);
+                color: #fff; 
+            }
+        }
+        
+    }
+}
+//----------Image end---------------

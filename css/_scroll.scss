@@ -1,0 +1,14 @@
+//bottomScroll
+.bottom-scroll{
+    position: fixed;
+    bottom:30px;
+    right: 30px;
+    background-color:$myColor;
+    color: #fff;
+    padding: 10px 16px;
+    cursor: pointer;
+    z-index: 999;
+    i{
+        font-size: 1.2rem;
+    }
+}

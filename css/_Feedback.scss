@@ -1,0 +1,106 @@
+//----------Feedback start----------
+#Feedback{
+    margin: 50px 0;
+    background-image: url(https://demo.7iquid.com/pethund/wp-content/uploads/2020/07/testi_overlay.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: $myColor2;
+    background-size: cover;
+    opacity: 1;
+    height: 100vh;
+    .top-feedback{
+        padding-top: 80px;
+        text-align: center;
+        color: #fff;
+        span{
+            font-weight: 700;
+            position: relative;
+            img{
+                width: 55px;
+                height: 55px;
+                position: absolute;
+                opacity: 0.2;
+                left: 40%;
+                top: -100%;
+                transform: translate(-50%,-100%);
+                animation: myAni 9s linear 0s infinite;
+
+            }
+        }
+        h1{
+            font-weight: 900;
+            color: $myColor;
+            font-size: 3rem;
+            span{
+                font-weight: 900;
+                color: #fff;
+            }
+        }
+    }
+    .left{
+        position: relative;
+        img{
+            padding: 40px 0;
+            position: absolute;
+            left: 20%;
+            top: 0%;
+            width: 70%;
+        }
+    }
+    .right{
+        border-radius: 10px;
+        padding: 40px 0;
+        text-align: center;
+        background: #fff;
+        position: relative;
+        .top{
+            p{
+                color: #888;
+            }
+            .img{
+                align-items: center;
+                justify-content: center;
+                img{
+                border-radius: 50%;
+
+                }
+                
+                .text{
+                    padding-left: 10px;
+                    h6{
+                        color: $myColor1;
+                        font-weight: 900;
+                        
+                       
+                    }
+                    span{
+                        color: $myColor;
+                        font-weight: 700;
+                        
+                    }
+                }
+            }
+      
+         }
+        .next,.prev{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+
+          i{
+              background: $myColor1;
+              padding: 12px 14px;
+              border-radius: 50%;
+              color: #fff;
+              box-shadow: 0 4px 13px  $myColor1;
+          }
+        } 
+        .next{
+            right: -12px;
+        }
+        .prev{
+            left: -12px;
+        }
+    }
+}
+//----------Feedback end----------

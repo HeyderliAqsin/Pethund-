@@ -1,0 +1,98 @@
+//-----------welcome start-----------
+#welcome{
+    padding: 50px 0;
+    .left-side{
+        img{
+            padding: 40px 0;
+        }
+    }
+    .right-side{
+        padding: 50px 40px;
+        h6{
+            color: $myColor2;
+            font-weight: 500;
+            position: relative;
+            img{
+                width: 55px;
+                height: 55px;
+                position: absolute;
+                left: 2%;
+                top: -100%;
+                transform: translate(0,-100%);
+                z-index: -1;
+                 animation: myAni 9s linear 0s infinite;
+
+            }
+        }
+        h2{
+            font-size: 3rem;
+            font-weight: 900;
+            color: $myColor2;
+            span{
+                color: $myColor;
+                font-weight: 700;
+                font-weight: 900;
+            }
+        }
+        p{
+            color: #888;
+            padding: 20px 0;
+        }
+        .stamp{
+            padding: 5px 0px;
+            i{
+                color: $myColor1;
+                font-size: 1.2rem;
+            }
+            span{
+                padding-left: 5px;
+                color: $myColor2;
+                font-weight: 500;
+            }
+        }
+        .btn{
+            margin-top: 45px;
+            padding: 12px 35px;
+            border: none;
+            background-color:$myColor2;
+            border-radius:45px;
+            position: relative;
+            overflow: hidden;
+            a{
+                position: relative;
+                color: #fff;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            &::before{
+                content:'';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 0%;
+                height: 200px;
+                background-color: #98cb46;
+                transform: translateY(-45%)skew(
+                25deg)scale(0);
+                transition: 0.3s ease-in-out;
+            }
+            &:hover{
+                &::before{
+                    content:'';
+                    position: absolute;
+                    top: 50%;
+                    left: -10%;
+                    width: 115%;
+                    height: 200px;
+                    background-color: $myColor1;
+                    transform: translateY(-55%)skew(
+                    25deg)scale(1);
+                    color: #fff; 
+                }
+            }
+            
+        }
+    }
+    
+}
+//----------welcome end--------------

@@ -1,0 +1,111 @@
+//----------About start--------------
+#About{      
+    .left{
+     .img{
+         position: relative;
+         &::after{
+             content: "";
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             background-color:#27304b81;
+         }
+        img{
+            height: 100vh;
+            object-fit: cover;
+        }
+     }
+     position: relative;
+     .video-popup{
+         position: absolute;
+         top: 50%;
+         left: 83%;
+         padding: 30px 20px;
+         background-color: $myColor1;
+         border-top-left-radius: 20px;
+         border-bottom-left-radius: 20px;
+         z-index: 10;
+         svg{
+            width: 50px;
+            height: 50px;
+           fill: #fff;
+         }
+         a{
+            width: 50px;
+            height: 50px;
+         }
+         span{
+             margin: 10px 0;
+             padding-left: 5px;
+         }
+          
+         
+      }
+   }
+   .right{
+       padding: 80px;
+       background-color: $myColor1;
+       height: 100%;
+       padding-right: 160px;
+       z-index: 1;
+       position: relative;
+   .text{
+       padding: 40px 0;
+     span{
+         color: #fff;
+         font-weight: 500;
+         position: relative;
+         img{
+             width: 55px;
+             height: 55px;
+             position: absolute;
+             filter:invert(100%);
+             opacity: 0.2    ;
+             z-index: -1;
+             left: 10%;
+             top: -100%;
+             transform: translate(10%,-100%);
+             animation: myAni 9s linear 0s infinite;
+             
+         }
+ 
+       }
+         h1{
+             color: #fff;
+             font-weight: 900;
+             font-size: 3rem;
+             span{
+               color: $myColor2;
+               font-weight: 900;
+ 
+             }
+         }
+         p{
+             color: #fff;
+             padding: 20px 0;
+         }
+     
+   }
+   #accordion{
+       i{
+           padding: 12px;
+           background-color: $myColor2;
+           border-radius: 50%;
+           color: #fff;
+       }
+       span{
+           color: $myColor2;
+           font-size: 1.2rem;
+           font-weight: 500;
+           padding-left: 10px;
+       }
+       p{
+           color: #fff;
+           display: none;
+       }
+   }
+   }
+ }
+ //----------About end----------------
